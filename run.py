@@ -3,7 +3,7 @@ import json
 import discord
 from discord.ext import commands
 
-description = '''A bot for the Code Monkeys discord guild. I'll change this so it doesn't use the default help menu later.'''
+description = '''Gives out bytes for activity, which can turn into ranks, such as kb, mb, gb, etc'''
 startup_extensions = ['roles'] #Extensions that will be loaded when the bot is started
 bot_prefix = '$' #Bot prefix
 
@@ -11,7 +11,7 @@ bot = commands.Bot(command_prefix=bot_prefix, description=description)
 
 @bot.event
 async def on_ready():
-    print('The Monkey logged in as')
+    print('Byte Rank Bot logged in as')
     print(bot.user.name)
     print(bot.user.id)
     print('------')
@@ -55,4 +55,4 @@ if __name__ == "__main__":
             exc = '{}: {}'.format(type(e).__name__, e)
             print('Failed to load extension {}\n{}'.format(extension, exc))
 
-    bot.run('MjgyNjQxMTMzMDUyMzYyNzU0.C4vCSQ.GSacnbPogJwP29aN0EcSvFqIjVY')
+    bot.run('')
