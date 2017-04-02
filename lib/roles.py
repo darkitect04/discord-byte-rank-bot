@@ -42,16 +42,5 @@ class Roles():
         embed.add_field(name='Exabyte', value='Becoming a `Exabyte` requires `1024` petabytes.')
         await self.bot.say('', embed=embed)
 
-    @commands.command(pass_context=True)
-    async def lur(self, ctx):
-        embed = discord.Embed(type='rich', colour=16777215)
-        embed.clear_fields()
-        embed.set_thumbnail(url='https://cdn.discordapp.com/icons/207138942850564096/42e71a9c04a3dfc40c7f46d22f91b0b3.webp')
-        embed.add_field(name='__**WELCOME**__', value='Hello, and welcome to the discord server for `LUReborn`. We are a group that is restoring LEGO Universe by creating a server emulator.')
-        embed.add_field(name='__**RULES**__', value="• Use common sense\n• No advertising your discord server\n• Don't ask for a role\n• Don't spam\n• Be respectful\n• Keep chat safe for work")
-        embed.add_field(name='__**CHANNEL**__', value='• <#283012262908788736> - Server information\n• <#207138942850564096> - General LEGO Universe chat\n• <#267483754119823361> - Non-LEGO Universe chat')
-        embed.add_field(name='__**EMOTES**__', value='• <:imagination:283019209695428629> `:imagination:`\n• <:bob:283019959905288203> `:bob:`')
-        await self.bot.say('', embed=embed)
-
 def setup(bot):
     bot.add_cog(Roles(bot))
