@@ -1,2 +1,2 @@
-# themonkey
-A discord bot for the Code Monkeys discord guild.
+# byte-rank-bot
+A discord bot that rewards activity with bytes, which give ranks based on amounts.
